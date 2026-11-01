@@ -1,15 +1,15 @@
 {
   "format": "koreanpatch-windows-v2/manifest-v1",
-  "game_id": "queens-domain-steam-26352205",
-  "patch_id": "queens-domain-ko-13471-rc1",
+  "game_id": "queens-domain-steam-26356968",
+  "patch_id": "queens-domain-ko-13480-rc1",
   "requirements": [
     {
       "path": "version.txt",
-      "sha256": "cc2cfb26f6d51b2db113854e569e8a44ac85b6cf45cd7d9c9cf880713294d35e"
+      "sha256": "94472f11b8e4926452501033b089ead34a37331c38f8e85b713c41c96b669046"
     },
     {
       "path": "QueensDomain/Content/Paks/QueensDomain-WindowsNoEditor.pak",
-      "sha256": "c50da960ae5cd3d6e0214a5ecc766b2709d5ef9423de2a3767ca0e6c040aa8ea"
+      "sha256": "b1d940fc6ad9461271d059ac4b31c57969b103c073cde07020fe6d5cb0d0132d"
     },
     {
       "path": "QueensDomain/Binaries/Win64/QueensDomain-Win64-Shipping.exe",
@@ -22,8 +22,8 @@
       "path": "QueensDomain/Content/Paks/queens-domain-ko_P.pak",
       "before_sha256": null,
       "payload": "payload/ko-ja-2378-i01-i02-w01_P.pak",
-      "payload_sha256": "b4a376503cd465296654d4eb56d345f0d435da8c5a4105b11bc696695e36d8a9",
-      "after_sha256": "b4a376503cd465296654d4eb56d345f0d435da8c5a4105b11bc696695e36d8a9"
+      "payload_sha256": "7879adda8a3c13fd7361ea400ee122de73d67b9c4978d20746cf572d3fb64d65",
+      "after_sha256": "7879adda8a3c13fd7361ea400ee122de73d67b9c4978d20746cf572d3fb64d65"
     }
   ],
   "runtime_preconditions": {
@@ -32,8 +32,8 @@
     "installation": "Extract KoreanPatch directly inside the supported game folder; close game, launcher updates and mod managers before running."
   },
   "verification_scope": {
-    "payload": "Q13 payload; all 14 overridden base resources and English locres match the 13468 originals byte for byte.",
-    "installer": "Unchanged runtime and operation targets; new requirements target build 26352205.",
-    "coverage": "13468 Windows tests cover the previous game version; 13471 game QA and package cycle are tracked separately."
+    "payload": "Build 26356968 payload adds the changed challenge confirmation key; all 14 overridden base resources and English locres match build 26352205.",
+    "installer": "Unchanged runtime and operation targets; new requirements target build 26356968.",
+    "coverage": "Windows and game display checks are tracked separately for build 26356968."
   }
 }

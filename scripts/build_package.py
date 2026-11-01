@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Assemble the build 26352205 package from an externally supplied payload."""
+"""Assemble the build 26356968 package from an externally supplied payload."""
 import argparse
 import hashlib
 import json
@@ -8,7 +8,7 @@ import zipfile
 
 ROOT = Path(__file__).resolve().parents[1]
 STAMP = (2026, 11, 1, 8, 48, 48)
-EXPECTED_ZIP = "22ac18eb3e1e6bde40a35b1842c6cf058003020c78efd68db2bc8d4f76b69c89"
+EXPECTED_ZIP = "5fca8d8f98e05d6a5a83a5a03336d1b94c2a9df67d09c3830a864b8be8284677"
 
 
 def digest(data):
@@ -42,7 +42,8 @@ def build(payload_path, output):
             raise ValueError("ZIP CRC verification failed")
     actual = digest(output.read_bytes())
     print("ZIP SHA-256:", actual)
-    print("matches released bytes:", actual == EXPECTED_ZIP)
+    if EXPECTED_ZIP is not None:
+        print("matches released bytes:", actual == EXPECTED_ZIP)
 
 
 def main():
