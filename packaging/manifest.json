@@ -1,0 +1,39 @@
+{
+  "format": "koreanpatch-windows-v2/manifest-v1",
+  "game_id": "queens-domain-steam-26352205",
+  "patch_id": "queens-domain-ko-13471-rc1",
+  "requirements": [
+    {
+      "path": "version.txt",
+      "sha256": "cc2cfb26f6d51b2db113854e569e8a44ac85b6cf45cd7d9c9cf880713294d35e"
+    },
+    {
+      "path": "QueensDomain/Content/Paks/QueensDomain-WindowsNoEditor.pak",
+      "sha256": "c50da960ae5cd3d6e0214a5ecc766b2709d5ef9423de2a3767ca0e6c040aa8ea"
+    },
+    {
+      "path": "QueensDomain/Binaries/Win64/QueensDomain-Win64-Shipping.exe",
+      "sha256": "8d805cff01753f9066bf60e4432a02d91533e4741ac0eaf1649b3c1cd17ee9cf"
+    }
+  ],
+  "operations": [
+    {
+      "kind": "add",
+      "path": "QueensDomain/Content/Paks/queens-domain-ko_P.pak",
+      "before_sha256": null,
+      "payload": "payload/ko-ja-2378-i01-i02-w01_P.pak",
+      "payload_sha256": "b4a376503cd465296654d4eb56d345f0d435da8c5a4105b11bc696695e36d8a9",
+      "after_sha256": "b4a376503cd465296654d4eb56d345f0d435da8c5a4105b11bc696695e36d8a9"
+    }
+  ],
+  "runtime_preconditions": {
+    "os": "Windows 11",
+    "shell": "Windows PowerShell 5.1, provided with Windows",
+    "installation": "Extract KoreanPatch directly inside the supported game folder; close game, launcher updates and mod managers before running."
+  },
+  "verification_scope": {
+    "payload": "Q13 payload; all 14 overridden base resources and English locres match the 13468 originals byte for byte.",
+    "installer": "Unchanged runtime and operation targets; new requirements target build 26352205.",
+    "coverage": "13468 Windows tests cover the previous game version; 13471 game QA and package cycle are tracked separately."
+  }
+}

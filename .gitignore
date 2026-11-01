@@ -1,0 +1,7 @@
+*.pak
+*.zip
+*.locres
+*.uasset
+*.uexp
+*.ubulk
+__pycache__/
