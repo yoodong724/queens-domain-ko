@@ -1,7 +1,7 @@
 {
   "format": "koreanpatch-windows-v2/manifest-v1",
   "game_id": "queens-domain-steam-26356968",
-  "patch_id": "queens-domain-ko-13480-rc1",
+  "patch_id": "queens-domain-ko-13480-playtime-layout-candidate-2",
   "requirements": [
     {
       "path": "version.txt",
@@ -22,8 +22,8 @@
       "path": "QueensDomain/Content/Paks/queens-domain-ko_P.pak",
       "before_sha256": null,
       "payload": "payload/ko-ja-2378-i01-i02-w01_P.pak",
-      "payload_sha256": "7879adda8a3c13fd7361ea400ee122de73d67b9c4978d20746cf572d3fb64d65",
-      "after_sha256": "7879adda8a3c13fd7361ea400ee122de73d67b9c4978d20746cf572d3fb64d65"
+      "payload_sha256": "7c042bb5238706b07e2daced3fbedfc59004d2c247bf9e749365b8138f23f59d",
+      "after_sha256": "7c042bb5238706b07e2daced3fbedfc59004d2c247bf9e749365b8138f23f59d"
     }
   ],
   "runtime_preconditions": {
@@ -32,8 +32,8 @@
     "installation": "Extract KoreanPatch directly inside the supported game folder; close game, launcher updates and mod managers before running."
   },
   "verification_scope": {
-    "payload": "Build 26356968 payload adds the changed challenge confirmation key; all 14 overridden base resources and English locres match build 26352205.",
-    "installer": "Unchanged runtime and operation targets; new requirements target build 26356968.",
-    "coverage": "Windows and game display checks are tracked separately for build 26356968."
+    "payload": "Hahmlet Bold replaces seven shared font faces; four Korean image textures use Hahmlet Black.",
+    "installer": "Same runtime and target as the build 26356968 patch.",
+    "coverage": "The same payload and installation runtime were tested on Windows; the file selection screen was checked at one resolution. Full game QA and other languages remain unverified."
   }
 }

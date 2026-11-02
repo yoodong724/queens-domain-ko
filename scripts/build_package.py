@@ -7,8 +7,8 @@ from pathlib import Path
 import zipfile
 
 ROOT = Path(__file__).resolve().parents[1]
-STAMP = (2026, 11, 1, 8, 48, 48)
-EXPECTED_ZIP = "5fca8d8f98e05d6a5a83a5a03336d1b94c2a9df67d09c3830a864b8be8284677"
+STAMP = (2026, 11, 2, 0, 0, 0)
+EXPECTED_ZIP = "baf2777c9f5e6c8e0c6f8c78c63f97413365be0ccf95e68dfa241c22010f3864"
 
 
 def digest(data):
@@ -24,6 +24,7 @@ def build(payload_path, output):
         raise ValueError("payload SHA-256 does not match the manifest")
     runtime = ROOT / "project/tools/packaging-runtime/KoreanPatch"
     entries = {
+        "KoreanPatch/LICENSE-Hahmlet-OFL.txt": (ROOT / "packaging/LICENSE-Hahmlet-OFL.txt").read_bytes(),
         "KoreanPatch/README.ko.txt": (ROOT / "packaging/README.ko.txt").read_bytes(),
         "KoreanPatch/install.cmd": (runtime / "install.cmd").read_bytes(),
         "KoreanPatch/manifest.json": manifest_bytes,
