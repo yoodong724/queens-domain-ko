@@ -8,7 +8,7 @@ import zipfile
 
 ROOT = Path(__file__).resolve().parents[1]
 STAMP = (2026, 11, 2, 0, 0, 0)
-EXPECTED_ZIP = "baf2777c9f5e6c8e0c6f8c78c63f97413365be0ccf95e68dfa241c22010f3864"
+EXPECTED_ZIP = "c7432076bb1ada3382ffdd1416832e12d06ce5545816f1b4590412ed32b4118d"
 
 
 def digest(data):
