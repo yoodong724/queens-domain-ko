@@ -1,19 +1,19 @@
 {
   "format": "koreanpatch-windows-v2/manifest-v1",
-  "game_id": "queens-domain-steam-26356968",
-  "patch_id": "queens-domain-ko-13480-playtime-layout-candidate-2",
+  "game_id": "queens-domain-steam-26477048",
+  "patch_id": "queens-domain-ko-13531",
   "requirements": [
     {
       "path": "version.txt",
-      "sha256": "94472f11b8e4926452501033b089ead34a37331c38f8e85b713c41c96b669046"
+      "sha256": "f75c498d971ce2a480352f6e8851cf979b317ef31cd924c8459f435aad7a412e"
     },
     {
       "path": "QueensDomain/Content/Paks/QueensDomain-WindowsNoEditor.pak",
-      "sha256": "b1d940fc6ad9461271d059ac4b31c57969b103c073cde07020fe6d5cb0d0132d"
+      "sha256": "731eedce34b440611313a8cb21db9cb321878b7077814d5e26640d01fb443f82"
     },
     {
       "path": "QueensDomain/Binaries/Win64/QueensDomain-Win64-Shipping.exe",
-      "sha256": "8d805cff01753f9066bf60e4432a02d91533e4741ac0eaf1649b3c1cd17ee9cf"
+      "sha256": "79ccdc6cf9e1e85512d52d2cb1c3ffa963d400be1555051a3523c982d181d1e6"
     }
   ],
   "operations": [
@@ -21,9 +21,9 @@
       "kind": "add",
       "path": "QueensDomain/Content/Paks/queens-domain-ko_P.pak",
       "before_sha256": null,
-      "payload": "payload/ko-ja-2378-i01-i02-w01_P.pak",
-      "payload_sha256": "7c042bb5238706b07e2daced3fbedfc59004d2c247bf9e749365b8138f23f59d",
-      "after_sha256": "7c042bb5238706b07e2daced3fbedfc59004d2c247bf9e749365b8138f23f59d"
+      "payload": "payload/ko-ja-13531_P.pak",
+      "payload_sha256": "04d529546ecee337f2fbde6770203695df0eed997960c3a4b2c374feccc91d81",
+      "after_sha256": "04d529546ecee337f2fbde6770203695df0eed997960c3a4b2c374feccc91d81"
     }
   ],
   "runtime_preconditions": {
@@ -32,8 +32,8 @@
     "installation": "Extract KoreanPatch directly inside the supported game folder; close game, launcher updates and mod managers before running."
   },
   "verification_scope": {
-    "payload": "Hahmlet Bold replaces seven shared font faces; four Korean image textures use Hahmlet Black.",
-    "installer": "Same runtime and target as the build 26356968 patch.",
-    "coverage": "The same payload and installation runtime were tested on Windows; the file selection screen was checked at one resolution. Full game QA and other languages remain unverified."
+    "payload": "Hahmlet Bold replaces seven shared font faces; the Rockwell and Silver copies carry the vertical metrics of the faces they replace; four Korean image textures use Hahmlet Black.",
+    "installer": "Same runtime as the previous build 26356968 patch; targets build 26477048 (game 13531).",
+    "coverage": "Text and the right-rotation hint of GameMenu were rebuilt for build 26477048. Screens that were checked are listed in the release notes; other screens, resolutions and languages remain unverified."
   }
 }
