@@ -1,15 +1,15 @@
 {
   "format": "koreanpatch-windows-v2/manifest-v1",
-  "game_id": "queens-domain-steam-26477048",
-  "patch_id": "queens-domain-ko-13531",
+  "game_id": "queens-domain-steam-26496428",
+  "patch_id": "queens-domain-ko-13540",
   "requirements": [
     {
       "path": "version.txt",
-      "sha256": "f75c498d971ce2a480352f6e8851cf979b317ef31cd924c8459f435aad7a412e"
+      "sha256": "2c766e33d0dfeab5b4dcd65f44a74cac90bfe1f1f5538a74e82673850c6fffb7"
     },
     {
       "path": "QueensDomain/Content/Paks/QueensDomain-WindowsNoEditor.pak",
-      "sha256": "731eedce34b440611313a8cb21db9cb321878b7077814d5e26640d01fb443f82"
+      "sha256": "1aa2165261272a9d7762ccaa537e8be76bfcac17825365a1b8283914541d06e5"
     },
     {
       "path": "QueensDomain/Binaries/Win64/QueensDomain-Win64-Shipping.exe",
@@ -21,9 +21,9 @@
       "kind": "add",
       "path": "QueensDomain/Content/Paks/queens-domain-ko_P.pak",
       "before_sha256": null,
-      "payload": "payload/ko-ja-13531_P.pak",
-      "payload_sha256": "04d529546ecee337f2fbde6770203695df0eed997960c3a4b2c374feccc91d81",
-      "after_sha256": "04d529546ecee337f2fbde6770203695df0eed997960c3a4b2c374feccc91d81"
+      "payload": "payload/ko-ja-13540_P.pak",
+      "payload_sha256": "09d8e9d256e92839ebec2e5edb0c01122c6865a3317bfe1bf26de1713293f287",
+      "after_sha256": "09d8e9d256e92839ebec2e5edb0c01122c6865a3317bfe1bf26de1713293f287"
     }
   ],
   "runtime_preconditions": {
@@ -33,7 +33,7 @@
   },
   "verification_scope": {
     "payload": "Hahmlet Bold replaces seven shared font faces; the Rockwell and Silver copies carry the vertical metrics of the faces they replace; four Korean image textures use Hahmlet Black.",
-    "installer": "Same runtime as the previous build 26356968 patch; targets build 26477048 (game 13531).",
-    "coverage": "Text and the right-rotation hint of GameMenu were rebuilt for build 26477048. Screens that were checked are listed in the release notes; other screens, resolutions and languages remain unverified."
+    "installer": "Same runtime as the previous build 26356968 patch; targets build 26496428 (game 13540).",
+    "coverage": "The challenge menu Confirm text reference was updated and the patched save slot widget was removed for build 26496428. Screens that were checked are listed in the release notes; other screens, resolutions and languages remain unverified."
   }
 }
