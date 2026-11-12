@@ -1,15 +1,15 @@
 {
   "format": "koreanpatch-windows-v2/manifest-v1",
-  "game_id": "queens-domain-steam-26611158",
-  "patch_id": "queens-domain-ko-13562",
+  "game_id": "queens-domain-steam-26612669",
+  "patch_id": "queens-domain-ko-13565",
   "requirements": [
     {
       "path": "version.txt",
-      "sha256": "be532b9d0e1ad0a0c93c91f9e5e3709d5e29b03769acabbc5559463817a216ec"
+      "sha256": "db2e770072a2986b436b93198c00683dcad1158c68ca3c8c3d5961b86c5d352a"
     },
     {
       "path": "QueensDomain/Content/Paks/QueensDomain-WindowsNoEditor.pak",
-      "sha256": "5bf26da78ea6c3bd31ab4757dd4df3c3f3c8d555bad8ab7fa83e76fdc519ee48"
+      "sha256": "ed661935778c29f9403fc0e3e469ef2a9248539ada953b21e5ee5eff1b54a284"
     },
     {
       "path": "QueensDomain/Binaries/Win64/QueensDomain-Win64-Shipping.exe",
@@ -21,9 +21,9 @@
       "kind": "add",
       "path": "QueensDomain/Content/Paks/queens-domain-ko_P.pak",
       "before_sha256": null,
-      "payload": "payload/ko-ja-13562_P.pak",
-      "payload_sha256": "285dff4296bde694e69c9ba90d9e383e4063a6dcb61057d93c4fdfc69584ba45",
-      "after_sha256": "285dff4296bde694e69c9ba90d9e383e4063a6dcb61057d93c4fdfc69584ba45"
+      "payload": "payload/ko-ja-13565_P.pak",
+      "payload_sha256": "cf443da96af533e0c2ea351837f5f3c665ad429f9443c4efafb5d099c2cc5921",
+      "after_sha256": "cf443da96af533e0c2ea351837f5f3c665ad429f9443c4efafb5d099c2cc5921"
     }
   ],
   "runtime_preconditions": {
@@ -33,7 +33,7 @@
   },
   "verification_scope": {
     "payload": "Hahmlet Bold replaces seven shared font faces; the Rockwell and Silver copies carry the vertical metrics of the faces they replace; four Korean image textures use Hahmlet Black.",
-    "installer": "Same runtime as the previous build 26356968 patch; targets build 26611158 (game 13562).",
-    "coverage": "The challenge menu Confirm text reference and two changed item descriptions were updated for build 26611158. Screens that were checked are listed in the release notes; other screens, resolutions and languages remain unverified."
+    "installer": "Same runtime as the previous build 26356968 patch; targets build 26612669 (game 13565).",
+    "coverage": "The challenge menu Confirm text reference was updated for build 26612669. Screens that were checked are listed in the release notes; other screens, resolutions and languages remain unverified."
   }
 }

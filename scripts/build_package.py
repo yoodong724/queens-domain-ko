@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Assemble the build 26611158 package from an externally supplied payload."""
+"""Assemble the build 26612669 package from an externally supplied payload."""
 import argparse
 import hashlib
 import json
@@ -8,7 +8,7 @@ import zipfile
 
 ROOT = Path(__file__).resolve().parents[1]
 STAMP = (2026, 11, 12, 0, 0, 0)
-EXPECTED_ZIP = "b5f8d16562eae4c5a25c3e9e32b715a17efdd4386b3554633ac8213a184412d2"
+EXPECTED_ZIP = "df1178adebd8b9794790391b63ce21c7766c45c106c64a23d42368e686684744"
 
 
 def digest(data):
